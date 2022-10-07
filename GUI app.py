@@ -180,7 +180,7 @@ def select(event):
     for key, value in json_file.items():
         if key == x:
             for key1, value1 in value.items():
-                jim += str(key1) + ":\t" + str(value1) + "\n"
+                jim += f"{key1}\t{value1}\n"
                 label_info.config(text = jim)
 
 #Creating a frame for the "Add category" button and "Select" button
